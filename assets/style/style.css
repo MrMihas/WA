@@ -1,0 +1,150 @@
+/* helpers */
+
+.header__blocks {
+    width: fit-content;
+    padding: 33px 0;
+    display: flex;
+    align-items: center;
+}
+
+
+/* grid */
+.fluid-container,
+.main-container,
+.container {
+    width: 100%;
+}
+
+.fluid-container {
+    max-width: 1600px;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+/* flex */
+
+.flex {
+    display: flex;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+/* end settings */
+
+
+body {
+    font-family: "Century Gothic";
+}
+
+
+
+/* ======= header   ============ */
+
+.social {
+    display: flex;
+}
+
+.social>a {
+    padding: 0 10px;
+}
+
+.social a:first-child {
+    padding: 0 10px 0 0;
+}
+
+
+.social a:last-child {
+    padding: 0 0 0 10px;
+}
+
+
+.language--change {
+    position: relative;
+
+    text-transform: uppercase;
+    padding: 0 10px;
+    font-size: 11px;
+    color: #9999A0;
+
+    transition: all 0.3s;
+}
+
+.language--change:before{
+    content: "";
+    position: absolute;
+    
+    width: 3px;
+    height: 3px;
+    display: block;
+    background-color: #181819;
+}
+
+.language--change:hover {
+    color: #181819;
+}
+
+.language--change:first-child {
+    padding: 0 10px 0 0;
+}
+
+
+.language--change:last-child {
+    padding: 0 0 0 10px;
+}
+
+
+
+
+/* media query*/
+
+@media(min-width: 290px) {}
+
+@media(min-width: 320px) {}
+
+@media(min-width: 480px) {
+    .container {}
+}
+
+@media(min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media(min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@media(min-width: 1400px) {
+    .container {
+        width: 1310px;
+    }
+}
