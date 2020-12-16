@@ -56,18 +56,29 @@ body {
 
 .social {
     display: flex;
+    
 }
 
-.social>a {
+.social:hover .social--link{
+    color:#9094A6;
+    transition: color 0.2s ease-in;
+}
+
+.social .social--link {
     padding: 0 10px;
+    color: #181819;
 }
 
-.social a:first-child {
+.social .social--link:hover{
+    color: #181819;
+}
+
+.social .social--link:first-child {
     padding: 0 10px 0 0;
 }
 
 
-.social a:last-child {
+.social .social--link:last-child {
     padding: 0 0 0 10px;
 }
 
@@ -76,34 +87,51 @@ body {
     position: relative;
 
     text-transform: uppercase;
-    padding: 0 10px;
+    margin: 0 10px;
     font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1px;
     color: #9999A0;
 
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 .language--change:before{
     content: "";
     position: absolute;
-    
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    opacity: 0;
+
     width: 3px;
     height: 3px;
+    border-radius: 50%;
+
     display: block;
     background-color: #181819;
+
+    transition: 0.2s ease-in;
+
+
 }
 
 .language--change:hover {
     color: #181819;
 }
 
+.language--change:hover:before{
+    top: -10px;
+    opacity: 1;
+}
+
 .language--change:first-child {
-    padding: 0 10px 0 0;
+    margin: 0 10px 0 0;
 }
 
 
 .language--change:last-child {
-    padding: 0 0 0 10px;
+    margin: 0 0 0 10px;
 }
 
 
