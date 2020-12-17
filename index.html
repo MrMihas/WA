@@ -16,9 +16,8 @@
 </head>
 <body>
 
-<div class="fluid-container">
     <div class="main-container">
-        <header>
+        <header class="header">
             <div class="row space-between">
                 <div class="header__blocks social">
 
@@ -59,34 +58,48 @@
                 </div>
                 <nav>
                     <ul class="nav__list flex" >
-                        <li class="nav__item">
-                            <a href="#0" class="nav__link"> о студии</a>
-                        </li>
+                            <li class="nav__item">
+                                <a href="#0" class="nav__link"> о студии</a>
+                            </li>
+                                <span class="dot"></span>
+                            <li class="nav__item">
+                                <a href="#0" class="nav__link"> портфолио</a>
+                            </li>
                             <span class="dot"></span>
-                        <li class="nav__item">
-                            <a href="#0" class="nav__link"> портфолио</a>
-                        </li>
-                        <span class="dot"></span>
-                        <li class="nav__item">
-                            <a href="#0" class="nav__link">этапы работы</a>
-                        </li>
-                        <span class="dot"></span>
-                        <li class="nav__item">
-                            <a href="#0" class="nav__link">стоимость</a>
-                        </li>
-                        <span class="dot"></span>
-                        <li class="nav__item">
-                            <a href="#0" class="nav__link">эко-материалы</a>
-                        </li>
-                        <span class="dot"></span>
-                        <li class="nav__item">
-                            <a href="#0" class="nav__link">контакты</a>
-                        </li>
+                            <li class="nav__item">
+                                <a href="#0" class="nav__link">этапы работы</a>
+                            </li>
+                            <span class="dot"></span>
+                            <li class="nav__item">
+                                <a href="#0" class="nav__link">стоимость</a>
+                            </li>
+                            <span class="dot"></span>
+                            <li class="nav__item">
+                                <a href="#0" class="nav__link">эко-материалы</a>
+                            </li>
+                            <span class="dot"></span>
+                            <li class="nav__item">
+                                <a href="#0" class="nav__link">контакты</a>
+                            </li>
 
                     </ul>
                 </nav>
             </div>
         </header>
+    </div>
+
+<div class="fluid-container">
+    <div class="hero">
+        <div class="hero__player">
+            <video poster="" id="video-player" autoplay='true' loop="true">
+                <source src="./assets/video/Interior Design Trends 2021.mp4" type="video/mp4">
+            </video>
+
+            <div class="control--btns">
+               <button id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+               <button id="pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
+            </div>
+        </div>
     </div>
 </div>
 

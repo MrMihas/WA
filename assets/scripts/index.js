@@ -11,12 +11,30 @@ for (let i = 0; i < languages.length; i++) {
     
 }
 
-// language.forEach(item => {
-//     item.addEventListener('click', function(e){
-//         e.preventDefault;
-//         if(item.classList.contains('active')){
-//              item.classList.remove('active');
-//         }
-      
-//     })
-// });
+// videoplayer
+
+let playVideo  = document.querySelector('#play');
+let pauseVideo = document.querySelector('#pause');
+
+
+playVideo.addEventListener('click', play);
+pauseVideo.addEventListener('click', pause);
+
+let video = document.querySelector('#video-player');
+video.volume = 0;
+
+playVideo.style.display = "none";
+
+function play(){
+    video.play();
+    playVideo.style.display = "none";
+    pauseVideo.style.display = "block";
+    }
+    
+    
+    
+    function pause() { 
+    video.pause();
+    pauseVideo.style.display = "none";
+    playVideo.style.display = "block";
+    }
