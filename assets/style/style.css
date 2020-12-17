@@ -95,6 +95,8 @@ body {
     transition: all 0.2s;
 }
 
+
+
 .language--change:before {
     content: "";
     position: absolute;
@@ -112,7 +114,13 @@ body {
 
     transition: 0.2s ease-in;
 
-
+}
+.language--change.active{
+    color: #181819;
+}
+.language--change.active:before {
+    top: -10px;
+    opacity: 1;
 }
 
 .language--change:hover {
